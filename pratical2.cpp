@@ -47,9 +47,15 @@ void function1(int number){
 void function2(int *numberPtr)
 
 {
-/* C10. display the address of number to the screen (should be the same
-address as you displayed first in main) */
-/* C11. display the value that the pointer numberPtr points to */
-/* C12. increment the value stored in number */
-/* C13. display the contents of number to the screen */
+    // C10. Display the address of number to the screen (should be the same as in main)
+    printf("C10. Address of number inside function2: %p\n", (void*)numberPtr);
+
+    // C11. Display the value that the pointer numberPtr points to
+    printf("C11. Value pointed to by numberPtr: %d\n", *numberPtr);
+
+    // C12. Increment the value stored in number
+    (*numberPtr)++;
+
+    // C13. Display the contents of number to the screen
+    printf("C13. Number after increment inside function2: %d\n", *numberPtr);
 }
