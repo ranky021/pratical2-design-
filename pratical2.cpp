@@ -33,10 +33,17 @@ return 0;
 }
 
 void function1(int number){
-/* C7. increment number by one */
-/* C8. display the contents of number to the screen (should be 11) */
-/* C9. display the address of number to the screen */
+   // C7. Increment number by one
+   number += 1;
+
+   // C8. Display the contents of number to the screen (should be 11)
+   printf("C8. Number inside function1: %d\n", number);
+
+   // C9. Display the address of number to the screen
+   printf("C9. Address of number inside function1: %p\n", (void*)&number);
 }
+
+
 void function2(int *numberPtr)
 
 {
