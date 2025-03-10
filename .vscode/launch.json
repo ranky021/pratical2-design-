@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/krishmarani/Desktop/practical2/pratical2-design-",
+      "program": "/Users/krishmarani/Desktop/practical2/pratical2-design-/build/Debug/outDebug"
+    }
+  ]
+}
