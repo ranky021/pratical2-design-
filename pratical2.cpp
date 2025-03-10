@@ -9,9 +9,17 @@ void function1(int);
 void function2(int *);
 int main() {
 int number = 10;
-/* C1. display the contents of number to the screen */
-/* C2. display the address of variable number to the screen */
-/* C3. call function1 */
+
+
+// C1. Display the contents of number to the screen
+printf("C1. Number: %d\n", number);
+
+// C2. Display the address of variable number to the screen
+printf("C2. Address of number: %p\n", (void*)&number);
+
+// C3. Call function1
+function1(number);
+
 /* C4. display the contents of number to the screen */
 /* C5. call function2 */
 /* C6. display the contents of number to the screen */
