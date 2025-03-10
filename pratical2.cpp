@@ -20,9 +20,15 @@ printf("C2. Address of number: %p\n", (void*)&number);
 // C3. Call function1
 function1(number);
 
-/* C4. display the contents of number to the screen */
-/* C5. call function2 */
-/* C6. display the contents of number to the screen */
+// C4. Display the contents of number to the screen
+printf("C4. Number after function1 call: %d\n", number);
+
+// C5. Call function2
+function2(&number);
+
+// C6. Display the contents of number to the screen
+printf("C6. Number after function2 call: %d\n", number);
+
 return 0;
 }
 
